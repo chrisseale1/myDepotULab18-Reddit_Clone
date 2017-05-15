@@ -1,0 +1,12 @@
+<div class=navish><img src="images/redditseal.png">
+    <h3>sealeit</h3>
+</div>
+<div class="container">
+    <plat-foreach plat-context="posts">
+        <h3>{{ title }}</h3>
+        <plat-link plat-options="{ view: @rootContext.singleVC, parameters: { id: id } }">See Post</plat-link>
+    
+        <!--<h5>{{ @formatter.formatDate(createdAt) }}</h5>-->
+        <!--<plat-link plat-options="{ view: @rootContext.singleVC, parameters: { id: id } }">See Post</plat-link>-->
+    </plat-foreach>
+</div>
